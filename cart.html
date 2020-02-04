@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang='ro'>
+    <head>
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <link rel="icon" type="image/png" href="images/logo.png">
+         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet"> 
+         <title>Coșul tău de cumpărături</title>
+    </head>
+    <body>
+        <div class="row home-link">
+                <ul class="cart-top-ul">
+                    <li><a href="index.html" class='cart-top-homeLink'>Acasă </a></li>
+                    <li><a href="#"><span>/</span> Coș</a></li>
+                </ul>
+        </div>
+        <div class='shopping-process row'>
+                <div class='shopping-steps '>
+                    <div class='shopping-steps-circles step-line1'>1</div>
+                    <div class='shopping-steps-circles steps-line'>2</div>
+                    <div class='shopping-steps-circles'>3</div>
+                </div>
+                <div class='shopping-steps-text '>
+                    <div class='shopping-steps-info'>Coș cumpărături</div>
+                    <div class='shopping-steps-info'>Detalii comandă</div>
+                    <div class='shopping-steps-info'>Sumar comandă</div>
+                </div>
+        </div> 
+        <h2 class='row h2style'>Coș</h2>
+        
+        
+        <div class='containerItem'>
+            <!-- Each Item-START-->
+            <div class="container-checkOut row">
+                <div class="checkOut-titles">
+                    <div class="checkOut-title-product commonStyleTitles">Produs</div>
+                    <div class="checkOut-title-quantity commonStyleTitles">Cantitate</div>
+                    <div class="checkOut-title-price commonStyleTitles">Preț unitar</div>
+                    <div class="checkOut-title-total commonStyleTitles">Subtotal</div> 
+                </div>
+                <div class="item-in-cart row">
+                    <div class="product-in-cart">
+                        <img src="images/trotineta-10.jpg" alt="" class="cart-item-product-image  checkOut-image">
+                        <p class="checkOut-title">Trotineta electrica XIAOMI Mijia M365, 8.5 inch, pliabila, negru</p>
+                    </div>
+                    <div class="quantity-in-cart">
+                        <div class="checkOut-quantity">1</div>  
+                        <div class="checkOut-quantity-ctrl">
+                            <div class="quantity-minus shape-ctrl">-</div>
+                            <div class="quantity-plus shape-ctrl">+</div>
+                        </div>
+                    </div>
+                    <div class="price-in-cart">
+                       <div class="star-in-cart">&#10022;</div>
+                       <div class="checkOut-price">1999<sup class="smallNumber">,90</sup> <span>lei</span></div>
+                       <div class="checkOut-discount">2100,90</div>
+                    </div>
+                    <div class="price-in-cart total-in-cart">
+                       <div class="star-in-cart" >&#10022;</div>
+                       <div class="checkOut-price checkOut-total">1999<sup class="smallNumber">,90</sup> <span>lei</span></div>
+                    </div>
+                </div>
+            </div>
+        <!-- Each Item-END--> 
+        <!-- Each Item-START-->
+            <div class="container-checkOut row">
+                <div class="checkOut-titles">
+                    <div class="checkOut-title-product commonStyleTitles">Produs</div>
+                    <div class="checkOut-title-quantity commonStyleTitles">Cantitate</div>
+                    <div class="checkOut-title-price commonStyleTitles">Preț unitar</div>
+                    <div class="checkOut-title-total commonStyleTitles">Subtotal</div> 
+                </div>
+                <div class="item-in-cart row">
+                    <div class="product-in-cart">
+                        <img src="images/trotineta-10.jpg" alt="" class="cart-item-product-image  checkOut-image">
+                        <p class="checkOut-title">Trotineta electrica XIAOMI Mijia M365, 8.5 inch, pliabila, negru</p>
+                    </div>
+                    <div class="quantity-in-cart">
+                        <div class="checkOut-quantity">1</div>  
+                        <div class="checkOut-quantity-ctrl">
+                            <div class="quantity-minus shape-ctrl">-</div>
+                            <div class="quantity-plus shape-ctrl">+</div>
+                        </div>
+                    </div>
+                    <div class="price-in-cart">
+                       <div class="star-in-cart">&#10022;</div>
+                       <div class="checkOut-price">1999<sup class="smallNumber">,90</sup> <span>lei</span></div>
+                       <div class="checkOut-discount">2100,90</div>
+                    </div>
+                    <div class="price-in-cart total-in-cart">
+                       <div class="star-in-cart" >&#10022;</div>
+                       <div class="checkOut-price checkOut-total">1999<sup class="smallNumber">,90</sup> <span>lei</span></div>
+                    </div>
+                </div>
+            </div>
+        <!-- Each Item-END--> 
+        </div>
+        
+        
+        <!--Container Totals and Discounts- START-->
+        <div class='container-totals row'>
+                <input type='button' value='Golește coșul' class='emptyCartBtn'>
+                <div class='discountBox'>
+                        <p>Cupon:</p>
+                        <input type="text" class='input-discount'>
+                        <input type='button' value= 'Aplică' class='discountValidateBtn'>
+                </div>
+                <div class='finalCartPrice'>
+                    <div class='styleRow borderRows'>
+                        <p>Subtotal:</p>
+                        <div class='subtotal-checkout numberStyle'>2549,80</div>
+                    </div>
+                    <div class='styleRow borderRows'>
+                        <p>Taxă  de livrare:</p>
+                        <div class='delivery-tax numberStyle'>0,00</div>
+                    </div>
+
+                        <div class='thirdRow styleRow'>
+                            <p>Total final:</p> 
+                            <div class='totalValue'>
+                                <div class='star-in-cart totalPriceStar' >&#10022;</div>
+                                <p class='numberStyle totalPrice'></p>2.549<sup class='smallNumber'>,80</sup>
+                            </div>
+                        </div>
+                        <div class='lastRow'>Prețurile sunt exprimate în lei și conțin TVA</div>
+                </div>
+                <input type='button' value='Finalizare comandă'class='buyBtn'>  
+        </div>
+          <!--Container Totals and Discounts- END-->  
+        <footer>   
+           <div class="footer-container">
+              <div class='certificate-container'>
+                    <div class="certificate row">
+                        <p>Conform sondajului Best Buy Award 2019/2020 efectuat de organizația iCertias.</p>
+                        <img src="images/bestbuy.png" alt="best buy certificate">
+                        <img src="images/bestbuy.png" alt="best buy certificate">
+                    </div>
+              </div> 
+              <div class="footer-grid row">
+                    <div class="footer-1 footer-list-style">
+                        <h4>Despre Altex</h4>
+                        <div class='borderUnder'></div>
+                        <ul>
+                            <li><a href="#">Despre noi</a></li>
+                            <li><a href="#">Cariere</a></li>
+                            <li><a href="#">Altex recomandă</a></li>
+                            <li><a href="#">Hartă magazine</a></li>
+                            <li><a href="#">Categorii produse</a></li>
+                            <li><a href="#">Afiliere Altex</a></li>
+                            <li><a href="#">Protecția mediului</a></li>
+                            <li><a href="#">Vânzări corporate</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-2 footer-list-style">
+                        <h4>Servicii</h4>
+                        <div class='borderUnder'></div>
+                        <ul>
+                            <li><a href="#">Finațare</a></li>
+                            <li><a href="#">Instalare</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">De 2 ori diferența</a></li>
+                            <li><a href="#">Rezervă în magazin</a></li>
+                            <li><a href="#">Tax free</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-3 footer-list-style">
+                        <h4>Suport clienți</h4>
+                        <div class='borderUnder'></div>
+                        <ul>
+                            <li><a href="#">Ajutor</a></li>
+                            <li><a href="#">Formular retur</a></li>
+                            <li><a href="#">Garanție</a></li>
+                            <li><a href="#">Relații clienți</a></li>
+                            <li><a href="#">Reclamații</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-4 footer-list-style">
+                        <h4>Informații</h4>
+                        <div class='borderUnder'></div>
+                        <ul>
+                            <li><a href="#">Termeni și condiții</a></li>
+                            <li><a href="#">Politica cookie-uri</a></li>
+                            <li><a href="#">Informații privind DEEE</a></li>
+                            <li><a href="#">A.N.P.C.</a></li>
+                            <li><a href="#">Protecția datelor cu caracter personal</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-5 footer-list-style">
+                        <h4>Contact</h4>
+                        <div class='borderUnder'></div>
+                        <a href='#'>Abonare newsletter</a>
+                        <ul class='socialMediaIcons'>
+                            <li><a href="#"><i class="icon ion-logo-facebook mediaIcons facebookIcon"></i></a></li>
+                            <li><a href="#"><i class="icon ion-logo-twitter mediaIcons twitterIcon"></i></a></li>
+                            <li><a href="#"><i class="icon ion-logo-linkedin mediaIcons linkinIcon"></i></a></li>
+                            <li><a href="#"><i class="icon ion-logo-youtube mediaIcons youtubeIcon"></i></a></li>
+                        </ul>
+                    </div>        
+              </div> 
+              <div class="certificate row center-text bottom-text">
+                <p>S.C. ALTEX ROMANIA S.R.L. este înregistrată cu numarul 600 / 2006 în registrul de evidență a prelucrarilor de date cu caracter personal</p> 
+                  <p>Acesta este o pagină fictivă, care sub nicio formă, nu reflectă politica sau prețurile Altex.</p>
+              </div>
+           </div>  
+        </footer>  
+    </body>
+    <script src="script.js" type=text/javascript></script>
+</html>

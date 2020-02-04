@@ -1,0 +1,2946 @@
+<!DOCTYPE html>
+<html>
+   <head>
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <link rel="icon" type="image/png" href="images/logo.png">
+         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+         <title>Trotinete electrice</title>       
+   </head>
+   <body>
+     <header>
+         <!-- Top links-->
+         <nav class="top-links row clearfix">
+             <div>
+                <ul class="links-menu ">
+                    <li><a href="#" class="top-nav-links">Cum cumpăr?</a></li>
+                    <li><a href="#" class="top-nav-links">Suport clienți</a></li>
+                    <li><a href="#" class="top-nav-links">2x Diferența</a></li>
+                    <li><a href="#" class="top-nav-links">Magazine</a></li>
+                    <li><a href="#" class="top-nav-links">Contact</a></li>
+                    <li id="phone-number">021 9196<i class="icon ion-md-call small-icon"></i></li>
+                    <li style="float:right"><a href="#" class="top-nav-links" >Intră în cont</a></li> 
+                    <li style="float:right" id="no-border"><a href="#" class="top-nav-links">Înregistrare</a></li>
+                </ul>
+             </div>
+         </nav>
+         <!-- Search Menu-->
+         <div class="search-container row">
+                    <div>
+                        <img src="images/big-logo.png" alt="big logo Altex" class="big-logo">
+                    </div>
+                    <form class="search-box">
+                        <input type="text" required placeholder="Cauta produsul dorit" >
+                        <button type='submit' class="search-button"><i class="icon ion-md-search big-icon"></i></button>
+                    </form>
+                    <div class="login-links login-button " id="my-account" >
+                        <a href="#" class="button " ><i class="icon ion-ios-person big-icon space-icon"></i>Contul meu <i class="icon ion-md-arrow-dropdown"></i></a>
+                    </div>   
+                    <div class="login-links color border-account" id="cart-button">
+                        <a href="#" class="button  "><i class="icon ion-md-cart big-icon space-icon"></i> Cosul meu <i class="icon ion-md-arrow-dropdown"></i></a>
+                    </div>
+                     <div class="small-paragraph">
+                            <p>*Dacă găsești în altă parte mai ieftin, plătim de 2x diferența</p>
+                     </div>
+            <!-- My account menu-->
+                    <div class="login-box myAccountHeight notActive" id='box-to-login'>
+                         <div>
+                             <form>
+                                <input type="email" placeholder="E-mail" required>
+                                <input type="password" placeholder="Parola" required>
+                            </form> 
+                       </div>
+                        <div>
+                             <form>
+                                <button type="button" id="register" class="position-login-buttons">Înregistrare</button>
+                                <button type="button" id="login" class="position-login-buttons">Autentificare</button>
+                             </form>
+                                <a href="#">Recuperează parola</a>
+                        </div>      
+                    </div>
+            <!-- Hidden small cart menu-->
+                    <div class='cartSmallBox notActive cartHeight'>
+                        <div class='containerItem-smallCart'>
+                                <div class='containerItemSmallCart'>
+                                        <div class="container-image-smallCart">
+                                            <img src="images/trotineta-10.jpg" alt="" class="image-smallCart">    
+                                        </div>
+                                        <div class="container-title-smallCart">
+                                            <a href= "#" class="smallCart-title">Trotineta electrica XIAOMI Mijia M365, 8.5 inch, pliabila, negru</a>
+                                            <div class="smallCart-quantity">1<span>buc.</span> </div> 
+                                        </div>
+                                        <div class="container-price-smallCart">
+                                           <div class="smallCart-price">2.432,01 </div>
+                                            <p>lei</p>
+                                        </div>
+                                        <div class='smallCart-removeItem'>x</div>
+                                </div>  
+                                <div class='containerItemSmallCart'>
+                                        <div class="container-image-smallCart">
+                                            <img src="images/trotineta-10.jpg" alt="" class="image-smallCart">    
+                                        </div>
+                                        <div class="container-title-smallCart">
+                                            <a href= "#" class="smallCart-title">Trotinetă electrică FREEWHEEL Rider T1, 8 inch</a>
+                                            <div class="smallCart-quantity">1<span>buc.</span> </div> 
+                                        </div>
+                                        <div class="container-price-smallCart">
+                                           <div class="smallCart-price">2.800,90 </div>
+                                            <p>lei</p>
+                                        </div>
+                                        <div class='smallCart-removeItem'>x</div>
+                                </div> 
+                        </div>
+                        <div class='totalPrice-smallCart'>
+                            <p>Preț total:</p>
+                            <div class='totalPrice'>2.300,90 <span class='leiItem'>lei</span></div>
+                         </div>
+                         <input type="button" value='Vezi coșul' class='smallCartBtn'>
+                         
+                        
+                    </div>
+          <!-- The main Cart menu-->
+         <div class='overLayEffect notActive'>
+                 <div class='hiddenCart'>
+                    <div class='cart-top-section cart-section-style'>
+                        <p>Produsul a fost adăugat în coșul de cumpărături</p>
+                        <input type='button' value="x" class='cart-btn-close-w'>
+                    </div>  
+                    <div class='cart-middle-section'>
+                        <div class='cart-item-section'>
+                            <div class='item-titles item-position '>
+                                  <p class='item-title-product item-title-style '>Produs</p>
+                                  <p class='item-title-quantity item-title-style'>Cantitate</p>
+                                  <p class='item-title-price item-title-style'>Preț unitar</p>
+                                  <p class='item-title-total item-title-style'>Subtotal</p>
+                            </div>
+                            <div class='cart-item-product item-position'>
+                                 <div class='item-title-style '>
+                                     <p class='style-text cart-item-product-title'> Trotineta electrica XIAOMI Mijia M365, 8.5 inch, pliabila, negru</p>
+                                     <img src='images/trotineta-10.jpg' alt='' class='cart-item-product-image '>
+                                 </div>
+                                 
+                                 <div class='cart-item-product-quantity item-title-style '>1</div>
+                                 <div class='cart-item-product-price item-title-style  align-text'> 
+                                     <div class="price cart-size-price">
+                                        <p class="priceCartStyle"> <span id="star">&#10022;</span><span class='itemCartPrice'>949</span> <sup>,90</sup><span class="lei starItemCart">lei</span></p>
+                                        <p class="smallPriceCart">1.299,90 </p>
+                                     </div>
+                                </div>
+                                 <div class='cart-item-product-total item-title-style'>
+                                     <div class="price cart-size-price ">
+                                        <p class="priceCartStyle" id='cart-item-product-total'> <span id="star">&#10022;</span ><span class='itemTotalPrice'> 1000</span><sup>,90</sup><span class="lei">lei</span></p>
+                                     </div>
+                                 </div>   
+                            </div>  
+                        </div>
+                    </div>
+                <div class='cart-bottom-section cart-section-style'>
+                      <div class='cart-item-btn'>
+                            <input type= 'button' value='Înapoi' class="cart-back-btn">
+                            <a href='cart.html'><input type= 'button' value='Vezi coșul' class="main-cart-btn"> </a>          
+                      </div>
+                </div>
+             </div>       
+            </div>
+         </div>
+     </header> 
+       <!-- The Drop Down Menu-->
+    <section>
+      <div class="top-menu-dropdown">
+            <div class="row">            
+            <ul class="topBar" >
+                <li  class="hoverProduct" id="bigPadding">
+                    <a href="#">Produse<div class="rotate arrowO"><i  class="icon ion-md-arrow-dropdown smallArrow" ></i></div></a>
+                </li>
+                <li class="hoverProduct" id="serviceButton">
+                    <a href="#">Servicii <div class="rotate arrowI"><i class="icon ion-md-arrow-dropdown smallArrow arrowC1 "></i></div></a>
+                </li>
+                <li class="hoverProduct" id="financeButton" >
+                    <a href="#">Finantare<div class="rotate arrowII"><i class="icon ion-md-arrow-dropdown smallArrow arrowC2 "></i></div></a>
+                </li>
+                <li class="hoverProduct"><a href="#">Cariere</a></li>
+                <li class="hoverProduct"><a href="#">Abonare newsletter</a></li> 
+            </ul>  
+
+        </div>
+      </div>
+      <div class="productDropMenu notActive boxDropDown" id='productBox'>
+                <ul class='allItems'>
+                    <!-- Telefoane & Tablete section from the drop down menu -->
+                 <li class='item' id='productPhone'>
+                     <div class='phoneButton'><a  href="#">Telefoane, Tablete <div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div></a>
+                     </div>
+                     <div class='menus menu0' >
+                            <ul class='subMenu1 phoneMenu '>
+                                <li><p>Telefoane</p></li>
+                                <li><p>Cartele Prepay</p></li>
+                                <li><p>Accesorii telefon mobil</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Huse telefon</li>
+                                        <li>Baterii externe</li>
+                                        <li>Carduri de memorie</li>
+                                        <li>USB Flash - OTG</li>
+                                        <li>Folii de protecție pentru telefon</li>
+                                        <li>Cabluri și adaptoare pentru telefon</li>
+                                        <li>Încărcătoare Wireless</li>
+                                        <li>Încărcătoare telefon</li>
+                                        <li>Suport auto pentru telefon</li>
+                                        <li>Selfie stick</li>
+                                    </ul>
+                                </li>
+                                <li><p>Wearables</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Smartwatch</li>
+                                        <li>Brățări fitness</li>
+                                        <li>Folii de protecție Smartwatch</li>
+                                        <li>Accesorii Wearables</li>
+                                    </ul>
+                                </li>
+                                <li><p>Boxe portabile</p></li>
+                                <li><p>Căști audio telefon</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Căști Handsfree</li>
+                                        <li>Căști True Wireless</li>
+                                        <li>Căști Bluetooth On-Ear</li>
+                                        <li>Căști Bluetooth In-Ear &#38; Neckband</li>
+                                        <li>Căști audio On-Ear</li>
+                                        <li>Căști audio In-Ear</li>
+                                        <li>Căști audio sport</li>
+                                    </ul>
+                                </li>
+                                <li><p>Tablete</p></li>
+                                <li><p>Accesorii tablete</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Huse tablete</li>
+                                        <li>Folii de protecție tablete</li>
+                                        <li>Accesorii diverse tablete</li>
+                                    </ul>
+                                </li>
+                                <li><p>Gadget-uri</p></li>
+                                <li><p>Telefoane fixe</p></li>
+                            </ul>
+                            <div class="displaySubMenu1 phoneMenuImages display0">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/product1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Telefoane</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/product2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Boxe portabile</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/product3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Căști audio telefon</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/product4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Tablete</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/product5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Gadget-uri</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/product6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Huse Telefon</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/product7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Baterii externe</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/product8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Smartwatch</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/product9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Brătări fitness</p>
+                                    </div>
+                                </div>
+                            </div> 
+                     </div>  
+                    </li>
+                    
+                    <!-- Laptop & Desktop section from the drop down menu -->
+                    <li class='item' >
+                             <div id='productLaptop' class="laptopButton">
+                              <a>Laptop, Desktop, IT <div class="rightArrow arrow1"><i class="icon ion-md-arrow-dropright"></i></div></a>
+                             </div>
+                      <div class='menus menu1' >
+                            <ul class='subMenu1 laptopMenu' >
+                            <li><p>Laptopuri</p>
+                                <ul class="smallSubMenu">
+                                    <li>2 în 1</li>
+                                    <li>Home</li>
+                                    <li>Gaming</li>
+                                    <li>Ultraportabil</li>
+                                    <li>Business</li>
+                                </ul>
+                            </li>
+                            <li><p>Macbook</p></li>
+                            <li><p>Sisteme PC</p>
+                                <ul class="smallSubMenu">
+                                    <li>Desktop Home</li>
+                                    <li>Calculator Gaming</li>
+                                    <li>Mini PC</li>
+                                    <li>All in One PC</li>
+                                </ul>
+                            </li>
+                            <li><p>Monitoare PC</p>
+                                <ul class="smallSubMenu">
+                                    <li>Monitoare Gaming</li>
+                                    <li>Monitoare home and Office</li>
+                                    <li>Monitoare Professional</li>
+                                    <li>Monitoare Digital Signage</li>
+                                </ul>
+                            </li>
+                            <li><p>Componente calculator</p>
+                                <ul class="smallSubMenu">
+                                    <li>Hard Disk Drive (HDD)</li>
+                                    <li>Solid State Drive (SSD)</li>
+                                    <li>Plăci video</li>
+                                    <li>Plăci de bază</li>
+                                    <li>Procesoare</li>
+                                    <li>Memorii PC</li>
+                                    <li>Surse de alimentare PC</li>
+                                    <li>Coolere PC</li>
+                                    <li>Carcase PC</li>
+                                    <li>Unități optice PC</li>
+                                    <li>Plăci de sunet PC</li>
+                                    <li>Plăci de rețea PC</li>
+                                    <li>Rack HDD</li>
+                                    <li>Adaptoare PC</li>
+                                </ul>
+                            </li>
+                            <li><p>Rețelistică calculatoare</p>
+                                <ul class="smallSubMenu">
+                                    <li>Adaptoare Wireless</li>
+                                    <li>Routere</li>
+                                    <li>Switch</li>
+                                    <li>Access Point</li>
+                                    <li>Adaptoare PowerLine</li>
+                                    <li>Network Attached Storage (NAS)</li>
+                                </ul>
+                            </li>
+                            <li><p>Periferice și accesori IT</p>
+                                <ul class="smallSubMenu">
+                                    <li>HDD și SSD externe</li>
+                                    <li>Mouse</li>
+                                    <li>Tastatură calculator</li>
+                                    <li>Căști pentru calculator</li>
+                                    <li>Memorii USB</li>
+                                    <li>Boxe calculator</li>
+                                    <li>Camere web</li>
+                                    <li>Unități optice externe</li>
+                                    <li>Card Reader</li>
+                                    <li>Hub-uri pentru USB</li>
+                                    <li>Mouse pad</li>
+                                    <li>UPS</li>
+                                    <li>Tablete grafice</li>
+                                    <li>Cabluri IT</li>
+                                    <li>Periferice Diverse</li>
+                                </ul>
+                            </li>
+                            <li><p>Imprimante și multifunționale</p>
+                                <ul class="smallSubMenu">
+                                    <li>Imprimante multifuncționale</li>
+                                    <li>Imprimante</li>
+                                    <li>Plottere</li>
+                                    <li>Imprimante termice</li>
+                                    <li>Scanner</li>
+                                    <li>Consumabile imprimante</li>
+                                    <li>Benzi etichete</li>
+                                </ul>
+                            </li>
+                            <li><p>Software</p>
+                                <ul class="smallSubMenu">
+                                    <li>Sisteme de operare</li>
+                                    <li>Antivirus</li>
+                                    <li>Office</li>
+                                </ul>
+                            </li>
+                            <li><p>Accesorii laptop</p>
+                                <ul class="smallSubMenu">
+                                    <li>Genți și huse pentru laptop</li>
+                                    <li>Cooling PAD</li>
+                                    <li>Încărcătoare laptop</li>
+                                    <li>Produse de întreținere pentru calculator</li>
+                                </ul>
+                            </li>  
+                        </ul>
+                        <div class="displaySubMenu1 laptopBox">
+                            <div>
+                                <h4>Cele mai accesate</h4> 
+                            </div>
+                            <div class="gridDisplayMenu">
+                                <div class="subMenuImage1 no-left-border">
+                                    <img class="size-photo" src='images/laptop1.jpg' alt='Phone'>
+                                    <p><span>&#187;</span> Laptopuri</p>
+                                </div>
+                                <div class="subMenuImage2">
+                                    <img class="size-photo" src='images/laptop2.jpg' alt='Phone'>
+                                    <p><span>&#187;</span> Macbook</p>
+                                </div>
+                                <div class="subMenuImage3">
+                                    <img class="size-photo" src='images/laptop3.jpg' alt='Phone'>
+                                    <p><span>&#187;</span>Sisteme PC</p>
+                                </div>
+                                <div class="subMenuImage4 no-left-border">
+                                    <img class="size-photo" src='images/laptop4.jpg' alt='Phone'>
+                                    <p><span>&#187;</span>Monitoare PC</p>
+                                </div>
+                                <div class="subMenuImage5">
+                                    <img class="size-photo" src='images/laptop5.jpg' alt='Phone'>
+                                    <p><span>&#187;</span>Componente calculator</p>
+                                </div>
+                                <div class="subMenuImage6">
+                                    <img class="size-photo" src='images/laptop6.jpg' alt='Phone'>
+                                    <p><span>&#187;</span>Imprimante și multifunționale</p>
+                                </div>
+                                <div class="subMenuImage7 no-left-border">
+                                    <img class="size-photo" src='images/laptop7.jpg' alt='Phone'>
+                                    <p><span>&#187;</span>Software</p>
+                                </div>
+                                <div class="subMenuImage8">
+                                    <img class="size-photo" src='images/laptop8.jpg' alt='Phone'>
+                                    <p><span>&#187;</span>Accesorii laptop</p>
+                                </div>
+                                <div class="subMenuImage9">
+                                    <img class="size-photo" src='images/laptop9.jpg' alt='Phone'>
+                                    <p><span>&#187;</span>Routere</p>
+                                </div>
+                            </div>
+                        </div>   
+                      </div>
+                        
+                    </li>
+                    <li class='item'>
+                        <div class="gameButton">
+                          <a>Gaming, Jocuri, Jucării <div class="rightArrow arrow2"><i class="icon ion-md-arrow-dropright"></i></div></a> 
+                        </div>
+                             <div class='menus menu2' >
+                                <ul class='subMenu1 gameMenu' >
+                                <li><p>Licențe electronice jocuri</p>
+                                </li>
+                                <li><p>Playstation 4</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Jocuri PS4/PSVR</li>
+                                        <li>Console PS4</li>
+                                        <li>Accesorii PS4/li>
+                                        <li>PS Plus/ Network Cards</li>
+                                    </ul>
+                                </li>
+                                <li><p>Xbox One</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Jocuri Xbox One</li>
+                                        <li>Console Xbox One</li>
+                                        <li>Accesorii Xbox One</li>
+                                        <li>Xbox live</li>
+                                    </ul>
+                                </li>
+                                <li><p>Nintendo Switch</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Jocuri Nintendo Switch/3DS</li>
+                                        <li>Console Nintendo Switch</li>
+                                        <li>Accesorii Nintendo Switch</li>
+                                    </ul>
+                                </li>
+                                <li><p>Gaming PC</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Jocuri PC</li>
+                                        <li>Tastaturi Gamming</li>
+                                        <li>Căști Gamming</li>
+                                        <li>Mouse Gamming</li>
+                                        <li>Mouse Pad Gamming</li>
+                                        <li>Controller Gamming</li>
+                                        <li>Volane Gamming</li>
+                                        <li>Boxe Gamming</li>
+                                        <li>Scaune Gamming</li>
+                                        <li>Accesorii Gamming</li>
+                                    </ul>
+                                </li>
+                                <li><p>Filme</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Filme DVD</li>
+                                        <li>Filme Blu-ray</li>
+                                        <li>Filme Blu-ray 3D</li>
+                                        <li>Filme 4K UHD</li>
+                                    </ul>
+                                </li>
+                                <li><p>Jucării Gaming</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Starlink</li>
+                                        <li>LEGO</li>
+                                        <li>Kendama</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="displaySubMenu1 gameBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/game1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Licențe electronice jocuri</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/game2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Playstation 4</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/game3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Xbox one</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/game4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Nintendo Switch</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/game5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Gaming PC</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/game6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Filme</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/game7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Jucării Gaming</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/game8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Jocuri PS4/PSVR</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/game9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Console PS4</p>
+                                    </div>
+                                </div>
+                            </div>   
+                      </div>
+                    </li>
+                    <li class='item'>
+                        <div class="tvButton">
+                            <a>TV, Audio-Video, Foto <div class="rightArrow arrow3"><i class="icon ion-md-arrow-dropright"></i></div></a>
+                        </div>
+                        <div class='menus menu3' >
+                                <ul class='subMenu1 tvMenu' >
+                                <li><p>Televizoare</p>
+                                </li>
+                                <li><p>Audio-Video</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Sisteme audio portabile</li>
+                                        <li>Sisteme audio</li>
+                                        <li>Soundbar și Home Cinema/li>
+                                        <li>Sisteme audio Hi-Fi</li>
+                                        <li>Bluray. DVD Player, Media Player</li>
+                                    </ul>
+                                </li>
+                                <li><p>Foto-Video</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Camere foto</li>
+                                        <li>Consumabile și Printere</li>
+                                        <li>Camere video sport</li>
+                                        <li>Camere video clasice</li>
+                                        <li>Rame foto</li>
+                                        <li>Obiective</li>
+                                        <li>Accesorii Foto/Video</li>
+                                    </ul>
+                                </li>
+                                <li><p>Videoproiectoare și accesorii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Videoproiectoare</li>
+                                        <li>Accesorii Videoproiectoare</li>   
+                                    </ul>
+                                </li>
+                                <li><p>Suporturi TV</p>
+                                </li>
+                                <li><p>Accesorii audio</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Cabluri audio</li>
+                                        <li>Adaptoare audio</li>
+                                        <li>Microfoane</li>
+                                        <li>Suporturi audio-video</li>
+                                    </ul>
+                                </li>
+                                <li><p>Accesorii video și Smart TV</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Accesorii Smart TV</li>
+                                        <li>Telecomenzi</li>
+                                        <li>Cabluri și adaptoare</li>
+                                        <li>Splittere, amplificatoare și accesorii antenă</li>
+                                        <li>Organizatoare cabluri</li>
+                                        <li>Produse de întreținere</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="displaySubMenu1 tvBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/tv1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Televizoare</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/tv2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Audio-Video</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/tv3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Foto-Video</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/tv4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Videoproiectoare și accesorii</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/tv5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Suporturi TV</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/tv6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Accesorii audio</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/tv7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Accesorii video și Smart TV</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/tv8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Soundbar și Home Cinema</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/tv9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Camere video sport</p>
+                                    </div>
+                                </div>
+                            </div>   
+                      </div>
+                    </li>
+                    <li class='item'>
+                        <div class="climaButton">
+                            <a>Climatizare <div class="rightArrow arrow4"><i class="icon ion-md-arrow-dropright"></i></div></a>
+                        </div>
+                        <div class='menus menu4' >
+                                <ul class='subMenu1 climaMenu' >
+                                <li><p>Calorifere electrice</p>
+                                </li>
+                                <li><p>Radiatoare și convectoare</p>
+                                </li>
+                                <li><p>Aeroterme</p>
+                                </li>
+                                <li><p>Centrare termice în condensare</p>
+                                </li>
+                                <li><p>Aer condiționat</p>
+                                </li>
+                                <li><p>Ventilatoare</p>
+                                </li>
+                                <li><p>Umidificatoare</p>
+                                </li>
+                                <li><p>Dezumidificatoare</p>
+                                </li>
+                                <li><p>Purificatoare aer</p>
+                                </li>
+                                <li><p>Boilere electrice și pe gaz</p>
+                                </li>
+                                <li><p>Accesorii climatizare</p>
+                                </li>
+                                <li><p>Servicii instalare aer condiționat</p>
+                                </li>
+                            </ul>
+                            <div class="displaySubMenu1 climaBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/clima1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Calorifere electrice</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/clima2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Aeroterme</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/clima3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Aer condiționat</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/clima4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Ventilatoare</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/clima5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Umidificatoare</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/clima6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Dezumidificatoare</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/clima7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Purificatoare aer/p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/clima8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Boilere electrice și pe gaz</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/clima9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Servicii instalare aer condiționat</p>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div> 
+                    </li>
+                    <li class='item'>
+                        <div class="electroButton">
+                            <a>Electrocasnice mari <div class="rightArrow arrow5"><i class="icon ion-md-arrow-dropright"></i></div></a>
+                        </div>
+                           <div class='menus menu5' >
+                                <ul class='subMenu1 electroMenu'>
+                                <li><p>Mașini de spălat rufe</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Mașini de spălat rufe frontale</li>
+                                        <li>Mașini de spălat rufe verticale</li>
+                                        <li>Mașini de spălat rufe încorporabile</li>
+                                        <li>Mașini de spălat rufe cu uscător</li>
+                                    </ul>
+                                </li>
+                                <li><p>Uscătoare de rufe</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Uscătoare de rufe automate</li>
+                                        <li>Uscătoare de rufe clasice</li>
+                                    </ul>
+                                </li>
+                                <li><p>Aparate frigorifice</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Combine frigorifice</li>
+                                        <li>Frigidere</li> 
+                                        <li>Frigidere încorporabile</li>
+                                        <li>Side-by-Side</li>
+                                        <li>Congelatoare</li>
+                                        <li>Lăzi frigorifice</li>
+                                        <li>Vitrine frigorifice</li>
+                                        <li>Răcitoare de vin</li>
+                                    </ul>
+                                </li>
+                                <li><p>Mașini de spălat vase</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Mașini de spălat vase independente</li>
+                                        <li>Mașini de spălat vase încorporabile</li>
+                                        <li>Mașini de spălat vase compacte</li>
+                                    </ul>
+                                </li>
+                                <li><p>Sanitare</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Baterii sanitare</li>
+                                        <li>Chiuvete</li>
+                                    </ul>
+                                </li>
+                                <li><p>Cuptoare încorporabile</p>
+                                </li>
+                                <li><p>Plite încorporabile</p>
+                                </li>
+                                <li><p>Cuptoare cu microunde încorporabile</p>
+                                </li>
+                                <li><p>Espressoare încorporabile</p>
+                                </li>
+                                <li><p>Aragazuri</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Aprindere pe gaz</li>
+                                        <li>Aprindere mixtă</li>
+                                        <li>Aprindere electrică</li>
+                                    </ul>
+                                </li>
+                                <li><p>Hote</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Hote tradiționale</li>
+                                        <li>Hote decorative</li>
+                                        <li>Hote încorporabile</li>
+                                    </ul>
+                                </li>
+                                <li><p>Accesorii/Consumabile</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Accesorii aparate frigorifice</li>
+                                        <li>Accesorii mașini de spălat rufe</li> 
+                                        <li>Accesorii mașini de spălat vase</li>
+                                        <li>Accesorii mașini de gătit</li>
+                                        <li>Accesorii hote</li>
+                                        <li>Consumabile aparate frigorifice</li>
+                                        <li>Consumabile mașini de gătit</li>
+                                        <li>Consumabile hote</li>
+                                    </ul>
+                                </li>
+                                <li><p>Spălare și întreținere rufe</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Detergent rufe</li>
+                                        <li>Balsam de rufe</li>
+                                        <li>Soluții anticalcar</li>
+                                        <li>Soluții întreținere textile</li>
+                                        <li>Înălbitor rufe și apret</li>
+                                    </ul>
+                                </li>
+                                <li><p>Produse curătare bucătărie</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Detergent vase</li>
+                                        <li>Soluții suprafețe bucătărie</li>
+                                        <li>Prosoape de hârtie și șervețele</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Produse curătare baie</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Hârtie igienică</li>
+                                        <li>Soluții suprafețe baie</li>
+                                        <li>Dezinfectant și detartrant toaletă</li>
+                                        <li>Odorizant baie </li>
+                                        <li>Soluții desfundat țevi</li>
+                                    </ul>
+                                </li>
+                                <li><p>Produse curătare casă și exterior</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Detergenți universali</li>
+                                        <li>Odorizant cameră</li>
+                                        <li>Soluție curățat mobila</li>
+                                        <li>Soluție curățat pardoseli</li>
+                                        <li>Soluție curățat geamuri</li>
+                                        <li>Insecticide, capcane</li>
+                                        <li>Produse îngrijire încălțăminte și accesorii</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="displaySubMenu1 electroBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/electro1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Mașini de spălat rufe</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/electro2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Uscătoare de rufe</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/electro3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Aparate frigorifice</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/electro4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Mașini de spălat vase</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/electro5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Cuptoare încorporabile</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/electro6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Plite încorporabile</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/electro7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Aragazuri</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/electro8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Hote</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/electro9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Spalare și întreținere rufe</p>
+                                    </div>
+                                </div>
+                            </div>   
+                      </div>
+                        
+                    </li>
+                    <li class='item'>
+                        <div class="menajButton">
+                            <a>Electrocasnice mici, Menaj <div class="rightArrow arrow6"><i class="icon ion-md-arrow-dropright"></i></div></a> 
+                        </div>
+                         <div class='menus menu6' >
+                                <ul class='subMenu1 menajMenu' >
+                                <li><p>Articole pentru servire</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Veselă pentru servire</li>
+                                        <li>Tacâmuri</li>
+                                        <li>Pahare și căni/li>
+                                        <li>Sticle și termosuri</li>
+                                    </ul>
+                                </li>
+                                <li><p>Articole pentru gătit</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Tigăi și capace</li>
+                                        <li>Oale și cratițe</li>
+                                        <li>Tăvi de copt</li>
+                                    </ul>
+                                </li>
+                                <li><p>Accesorii pentru gătit</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Recipiente depozitare</li>
+                                        <li>Cuțite</li>  
+                                        <li>Ustensile pentru gătit</li>   
+                                    </ul>
+                                </li>
+                                <li><p>Îngrijirea locuinței</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Aspiratoare</li>
+                                        <li>Mopuri și apare de curătat cu abiro</li>
+                                        <li>Saci aspiratoare</li>
+                                        <li>Accesorii aspiratoare</li>
+                                        <li>Consumabile aspiratoare</li>
+                                    </ul>
+                                </li>
+                                <li><p>Îngrijirea țesăturii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Fiare de călcat și apare de călcat vertical</li>
+                                        <li>Stații de călcat</li>
+                                        <li>Mese de călcat</li>
+                                        <li>Huse mese de călcat</li>
+                                        <li>Accesorii și consumabile fiare de călcat</li>
+                                        <li>Mașini de cusut</li>
+                                        <li>Accesorii mașini de cusut</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Electrocasnice și aparate pentru bucătărie</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Storcătoare de frunte și legume</li>
+                                        <li>Roboți de bucătărie</li>
+                                        <li>Blendere și mini tocătoare</li>
+                                        <li>Mașini de tocat</li>
+                                        <li>Cântare de bucătărie</li>
+                                        <li>Fierbătoare de apă</li>
+                                        <li>Feliatoare</li>
+                                        <li>Aparate de filtare a apei</li>
+                                        <li>Accesorii aparate de bucătărie</li>
+                                    </ul>
+                                </li>
+                                <li><p>Prepararea pâinii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Mașini de copt pâine</li>
+                                        <li>Prăjitoare de pâine</li>
+                                        <li>Prăjitoare de sandwich-uri și waffe</li>
+                                    </ul>
+                                </li>
+                                <li><p>Aparate pentru gătit</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Multicooker</li>
+                                        <li>Friteuze</li>
+                                        <li>Grătare electrice</li>
+                                        <li>Plite electrice</li>
+                                        <li>Aparate de gătit în abur și deshidratoare</li>
+                                        <li>Aparate pentru desert</li>
+                                        <li>Mașini pentru paste</li>
+                                        <li>Aparate de vidat</li> 
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="displaySubMenu1 menajBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/menaj1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Articole pentru servire</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/menaj2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Articole pentru  gătit</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/menaj3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Accesorii pentru gătit</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/menaj4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Îngrijirea locuinței</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/menaj5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Îngrijirea țesăturii</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/menaj6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Electrocasnice și aparate pentru bucătărie</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/menaj7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>preparea pâinii</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/menaj8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Aparate pentru gătit</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/menaj9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Veselă pentru servire</p>
+                                    </div>
+                                </div>
+                            </div>   
+                      </div>
+                    <li class='item'>
+                        <div class="apaButton">
+                          <a>Apă, Espresso, Cafea, Suc <div class="rightArrow arrow7"><i class="icon ion-md-arrow-dropright"></i></div></a>
+                        </div>
+                             <div class='menus menu7' >
+                                <ul class='subMenu1 apaMenu'>
+                                <li><p>Apă îmbuteliată</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Apă minerală plată</li>
+                                        <li>Apă minerală  carbogazoasă</li>
+                                        <li>Apă cu vitamine</li>
+                                    </ul>
+                                </li>
+                                <li><p>Suc, Ice Tea, Energizant</p>
+                                </li>
+                                <li><p>Bere</p>
+                                </li>
+                                <li><p>Expressoare cafea</p>
+                                </li>
+                                <li><p>Cafetiere</p>
+                                </li>
+                                <li><p>Cafetiere</p>
+                                </li>
+                                <li><p>Râșnișe cafea</p>
+                                </li>
+                                <li><p>Cafea, Capsule, Ceai</p>
+                                </li>
+                                <li><p>Accesorii aparate de cafea</p>
+                                </li>
+                                <li><p>Consumabile aparate de cafea</p>
+                                </li>
+                              
+                            </ul>
+                            <div class="displaySubMenu1 apaBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/apa1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Apă îmbuteliată</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/apa2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Expresoare cafea</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/apa3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Cafetiere</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/apa4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Râșnișe cafea</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/apa5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Cafea, Capsule, Ceai</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/apa6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Accesorii aparate de cafea</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/apa7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Consumabile aparate de cafea</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/apa8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Suc, Ice Tea, Energizant</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/apa9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Bere</p>
+                                    </div>
+                                </div>
+                            </div>   
+                      </div>    
+                    </li>
+                    <li class='item'>
+                        <div class="cosmeButton">
+                            <a>Cosmetice, Îngrijire personală <div class="rightArrow arrow8"><i class="icon ion-md-arrow-dropright"></i></div></a>
+                        </div>
+                           <div class='menus menu8' >
+                                <ul class='subMenu1 cosmeMenu' >
+                                <li><p>Seturi cosmetice cadou</p>
+                                </li>
+                                <li><p>Parfumuri</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Parfumuri femei</li>
+                                        <li>Parfumuri bărbați</li>
+                                    </ul>
+                                </li>
+                                <li><p>Protecție solară corp</p>
+                                </li>
+                                <li><p>Îngrijirea părului</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Șampon și Balsam de păr</li>
+                                        <li>Vopsea de păr și oxidanți</li>
+                                        <li>Măști și tratamente păr</li>
+                                        <li>Hair Styling- Fixativ, Gel și Spumă de păr</li>
+                                    </ul>
+                                </li>
+                                <li><p>Îngrijirea tenului</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Curățare și Demachiere</li>
+                                        <li>Creme hidratante și antirid</li>
+                                        <li>Măști și tratamente față</li>
+                                        <li>Aftershave</li>
+                                        <li>Spumă și gel de ras</li>
+                                        <li>Șervețele și dischete demachiante</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Îngrijirea corpului</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Gel de duș</li>
+                                        <li>Săpunuri</li>
+                                        <li>Deodorant și antiperspirant</li>
+                                        <li>Creme și loțiuni de corp</li>
+                                        <li>Ceară, benzi și creme depilatoare</li>
+                                        <li>Tratament și îngrijire corp</li>
+                                        <li>Branturi pentru pantofi</li>
+                                    </ul>
+                                </li>
+                                <li><p>Igienă intimă</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Prezervative</li>
+                                        <li>Lubrifianți</li>
+                                        <li>Servețele igienă intimă</li>
+                                        <li>Loțiune igienă intimă</li>
+                                        <li>Tampoane și absorbante</li>
+                                        <li>Scutece adulți</li>
+                                    </ul>
+                                </li>
+                                <li><p>Cosmetice BIO</p>
+                                </li>
+                                <li><p>Make-up</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Fond de ten și Primer</li>
+                                        <li>Anticearcăn și Corector</li>
+                                        <li>Iluminator și Contur</li>
+                                        <li>Pudră și Fard de obraz</li>
+                                        <li>Fard de pleoape și Primer</li>
+                                        <li>Creion și tuș de ochi</li>
+                                        <li>Mascara</li>
+                                        <li>Ruj și creion de buze</li>
+                                        <li>Stilizare sprâncene</li>
+                                        <li>Pensule machiaj</li>
+                                        <li>Gene false și accesorii machiaj</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Manichiură și Pedichiură</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Ojă și Lac de unghii</li>
+                                        <li>Tratament și Dizolvanți</li>
+                                        <li>Aparate de machiură/pedichiură</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Genți cosmetice</p>
+                                </li>
+                                 <li><p>Epilatoare clasice și IPL</p>
+                                </li>
+                                <li><p>Hair styling</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Perii de păr</li>
+                                        <li>Plăci de îndreptat părul</li>
+                                        <li>Uscătoare de păr</li>
+                                        <li>Ondulatoare de păr</li>
+                                        <li>Bigudiuri</li>
+                                        <li>Multistyler de păr</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Aparate de ras și tuns</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Aparate de ras</li>
+                                        <li>Aparate de tuns</li>
+                                        <li>Aparate de tuns barba</li>
+                                        <li>Aparate de tuns corporal</li>
+                                        <li>Trimmer facial</li>
+                                        <li>Seturi complete de ras și tuns</li>
+                                        <li>Aparate de tuns pentru animale de companie</li>
+                                    </ul>
+                                </li>
+                                <li><p>Igienă dentară</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Produse igienă dentară</li>
+                                        <li>Periuțe de dinți electrice și irigatoare</li>
+                                        <li>Accesorii periuțe de dinți</li>
+                                    </ul>
+                                </li>
+                                <li><p>Articole de sănătate</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Cântare corporale</li>
+                                        <li>Wellness</li>
+                                        <li>Monitorizarea sănătății</li>
+                                        <li>Sport și monitorizarea activitățoo</li>
+                                    </ul>
+                                </li>    
+                                 <li><p>Aparate cosmetice</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Oglinzi cosmetice</li>
+                                        <li>Perii de ten și corp</li>
+                                        <li>Saune faciale</li>
+                                     </ul>
+                                </li> 
+                                <li><p>Accesorii / consumabile</p>
+                                </li>
+                                
+                            </ul>
+                            <div class="displaySubMenu1 cosmeBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/cosme1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Seturi cosmetice cadou</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/cosme2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Parfumuri</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/cosme3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Protecție solară corp</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/cosme4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Îngrijirea părului</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/cosme5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Îngrijirea tenului</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/cosme6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Îngrijirea corpului</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/cosme7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Igienă intimă</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/cosme8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Cosmetice BIO</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/cosme9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Make-up</p>
+                                    </div>
+                                </div>
+                            </div>   
+                      </div>
+                        
+                    </li>
+                    <li class='item'>
+                        <div class="bebeButton">
+                            <a>Bebeluși, Copii <div class="rightArrow arrow9"><i class="icon ion-md-arrow-dropright"></i></div></a>
+                        </div>
+                        <div class='menus menu9' >
+                                <ul class='subMenu1 bebeMenu' >
+                                <li><p>Igienă și îngrijire</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Aparate aerosoli</li>
+                                        <li>Aspiratoare nazale</li>
+                                        <li>Termometre copii</li>
+                                        <li>Accesorii îngrijire</li>
+                                    </ul>
+                                </li>
+                                <li><p>Scutece copii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Scutece și chiloței bebeluși</li>
+                                        <li>Șervețele umede bebeluși</li>
+                                        <li>Cutii, coșuri și accesorii scutece</li>
+                                    </ul>
+                                </li>
+                                <li><p>Biberoane și accesorii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>CBiberoane, tetine și accesorii</li>
+                                        <li>Suzete și accesorii</li>
+                                        <li>Încălzitoare lapte și termosuri bebeluși</li>
+                                        <li>Sterilizatoare</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Articole hrănire bebeluși</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Scaune de masă bebe</li>
+                                        <li>Aparate preparare hrană</li>
+                                        <li>Aparate preparare lapte</li>
+                                        <li>Accesorii hrănire</li>
+                                    </ul>
+                                </li>
+                                <li><p>Maternitate și alăptare</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Pompe de sân</li>
+                                        <li>Accesorii alăptare</li>
+                                        <li>Articole postnatale și lenjerie modelatoare</li>
+                                        <li>Loțiune igienă intimă</li>
+                                        <li>Tampoane și absorbante</li>
+                                        <li>Scutece adulți</li>
+                                    </ul>
+                                </li>
+                                <li><p>Cărucioare și articole transport</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Cărucioare</li>
+                                        <li>Scaune auto copii</li>
+                                        <li>Accesorii transport bebeluți și copii</li>
+                                        <li>Genți bebeluși</li>
+                                        <li>Marsupii bebeluși și hamuri copii</li>
+                                        <li>Premergătoare</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Camera copilului</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Pătuț bebe</li>
+                                        <li>Balansoare și leagăne</li>
+                                        <li>Mese de înfășat</li>
+                                        <li>Țarcuri copii</li>
+                                        <li>Sisteme de siguranță copii</li>
+                                        <li>Mobilier copii</li>
+                                        <li>Perne și pilote bebeluși</li>
+                                        <li>Lămpi de veghe și iluminat pentru copii</li>
+                                    </ul>
+                                </li>
+                                <li><p>Monitorizare bebeluși</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Monitorizare video</li>
+                                        <li>Monitorizare audio</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Baia bebelușului</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Cădițe bebe și accesorii</li>
+                                        <li>Olițe și reductoare WC</li>
+                                        <li>Cântare bebeluți și copii</li>
+                                        <li>Detergenți hăinuțe bebeluși și copii</li>
+                                    </ul>
+                                </li>
+                                <li><p>Cosmetice bebeluși și copii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Creme și loțiuni de corp copii</li>
+                                        <li>Șampon și balsam copii</li>
+                                        <li>Săpun și gel de duș copii</li>
+                                        <li>Igienă dentară copii</li>
+                                    </ul>
+                                </li>
+                                <li><p>Jucării bebeluși</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Jucării pentru cărucior și pătuț</li>
+                                        <li>Jucării interactive bebeluși</li>
+                                        <li>Saltele și centre de activitați</li>
+                                        <li>Jucării zornăitoare</li>
+                                        <li>Jucării de baie</li>
+                                        <li>Jucării pentru dentiție</li>
+                                    </ul>
+                                </li>    
+                                 <li><p>Jucării și jocuri copii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Jocuri de construcții</li>
+                                        <li>Jocuri educative</li>
+                                        <li>Jocuri de societate</li>
+                                        <li>Jocuri Puzzle</li>
+                                        <li>Mașinușe copii</li>
+                                        <li>Jocuri de rol</li>
+                                        <li>Triciclete</li>
+                                        <li>Locuri de joacă și accesorii</li>
+                                        <li>Corturi și căsuțe</li>
+                                     </ul>
+                                </li> 
+                                <li><p>Accesorii / consumabile</p>
+                                </li>
+                                
+                            </ul>
+                            <div class="displaySubMenu1 bebeBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/bebe1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Jucării și jocuri copii</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/bebe2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Aparate aerosoli</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/bebe3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Igienă și îngrijire</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/bebe4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Scutece copii</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/bebe5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Biberoane și accesorii</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/bebe6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Articole hrănire bebeluși</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/bebe7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Maternitate și alăptare</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/bebe8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Cărucioare și articole transport</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/bebe9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Camera copilului</p>
+                                    </div>
+                                </div>
+                            </div>   
+                      </div>
+                        
+                    </li>
+                    <li class='item'>
+                        <div class="homeButton">
+                           <a>Casă, Iluminat, Bricolaj <div class="rightArrow arrow10"><i class="icon ion-md-arrow-dropright"></i></div></a> 
+                        </div>
+                        <div class='menus menu10' >
+                                <ul class='subMenu1 homeMenu' >
+                                <li><p>Igienă și îngrijire</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Aparate aerosoli</li>
+                                        <li>Aspiratoare nazale</li>
+                                        <li>Termometre copii</li>
+                                        <li>Accesorii îngrijire</li>
+                                    </ul>
+                                </li>
+                                <li><p>Scutece copii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Scutece și chiloței bebeluși</li>
+                                        <li>Șervețele umede bebeluși</li>
+                                        <li>Cutii, coșuri și accesorii scutece</li>
+                                    </ul>
+                                </li>
+                                <li><p>Biberoane și accesorii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>CBiberoane, tetine și accesorii</li>
+                                        <li>Suzete și accesorii</li>
+                                        <li>Încălzitoare lapte și termosuri bebeluși</li>
+                                        <li>Sterilizatoare</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Articole hrănire bebeluși</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Scaune de masă bebe</li>
+                                        <li>Aparate preparare hrană</li>
+                                        <li>Aparate preparare lapte</li>
+                                        <li>Accesorii hrănire</li>
+                                    </ul>
+                                </li>
+                                <li><p>Maternitate și alăptare</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Pompe de sân</li>
+                                        <li>Accesorii alăptare</li>
+                                        <li>Articole postnatale și lenjerie modelatoare</li>
+                                        <li>Loțiune igienă intimă</li>
+                                        <li>Tampoane și absorbante</li>
+                                        <li>Scutece adulți</li>
+                                    </ul>
+                                </li>
+                                <li><p>Cărucioare și articole transport</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Cărucioare</li>
+                                        <li>Scaune auto copii</li>
+                                        <li>Accesorii transport bebeluți și copii</li>
+                                        <li>Genți bebeluși</li>
+                                        <li>Marsupii bebeluși și hamuri copii</li>
+                                        <li>Premergătoare</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Camera copilului</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Pătuț bebe</li>
+                                        <li>Balansoare și leagăne</li>
+                                        <li>Mese de înfășat</li>
+                                        <li>Țarcuri copii</li>
+                                        <li>Sisteme de siguranță copii</li>
+                                        <li>Mobilier copii</li>
+                                        <li>Perne și pilote bebeluși</li>
+                                        <li>Lămpi de veghe și iluminat pentru copii</li>
+                                    </ul>
+                                </li>
+                                <li><p>Monitorizare bebeluși</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Monitorizare video</li>
+                                        <li>Monitorizare audio</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Baia bebelușului</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Cădițe bebe și accesorii</li>
+                                        <li>Olițe și reductoare WC</li>
+                                        <li>Cântare bebeluți și copii</li>
+                                        <li>Detergenți hăinuțe bebeluși și copii</li>
+                                    </ul>
+                                </li>
+                                <li><p>Cosmetice bebeluși și copii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Creme și loțiuni de corp copii</li>
+                                        <li>Șampon și balsam copii</li>
+                                        <li>Săpun și gel de duș copii</li>
+                                        <li>Igienă dentară copii</li>
+                                    </ul>
+                                </li>
+                                <li><p>Jucării bebeluși</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Jucării pentru cărucior și pătuț</li>
+                                        <li>Jucării interactive bebeluși</li>
+                                        <li>Saltele și centre de activitați</li>
+                                        <li>Jucării zornăitoare</li>
+                                        <li>Jucării de baie</li>
+                                        <li>Jucării pentru dentiție</li>
+                                    </ul>
+                                </li>    
+                                 <li><p>Jucării și jocuri copii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Jocuri de construcții</li>
+                                        <li>Jocuri educative</li>
+                                        <li>Jocuri de societate</li>
+                                        <li>Jocuri Puzzle</li>
+                                        <li>Mașinușe copii</li>
+                                        <li>Jocuri de rol</li>
+                                        <li>Triciclete</li>
+                                        <li>Locuri de joacă și accesorii</li>
+                                        <li>Corturi și căsuțe</li>
+                                     </ul>
+                                </li> 
+                                <li><p>Accesorii / consumabile</p>
+                                </li>
+                                
+                            </ul>
+                            <div class="displaySubMenu1 homeBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/bebe1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Jucării și jocuri copii</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/bebe2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Aparate aerosoli</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/bebe3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Igienă și îngrijire</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/bebe4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Scutece copii</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/bebe5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Biberoane și accesorii</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/bebe6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Articole hrănire bebeluși</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/bebe7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Maternitate și alăptare</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/bebe8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Cărucioare și articole transport</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/bebe9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Camera copilului</p>
+                                    </div>
+                                </div>
+                            </div>   
+                      </div>
+                        
+                    </li>
+                    <li class='item'>
+                        <div class="autoButton">
+                            <a>Auto, Moto, Anvelope <div class="rightArrow arrow11"><i class="icon ion-md-arrow-dropright"></i></div></a>
+                        </div>
+                               <div class='menus menu11' >
+                                <ul class='subMenu1 autoMenu' >
+                                <li><p>Electronice auto</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Playere</li>
+                                        <li>Boxe și Subwoofere</li>
+                                        <li>Amplificatoare</li>
+                                        <li>Pachete bass</li>
+                                        <li>Insonorizant auto</li>
+                                        <li>Sisteme GPS</li>
+                                        <li>Camere video auto</li>
+                                        <li>Stații emisie recepție</li>
+                                        <li>Car kituri auto</li>
+                                        <li>Modulator FM</li>
+                                        <li>Detectoare radar</li>
+                                        <li>Alarme și senzori de parcare</li>
+                                        <li>Accesorii</li>
+                                    </ul>
+                                </li>
+                                <li><p>Anvelope, jante și accesorii roți</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Anvelope</li>
+                                        <li>Jante</li>
+                                        <li>Accesorii roți</li>
+                                    </ul>
+                                </li>
+                                <li><p>Electrică auto</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Baterii auto-moto</li>
+                                        <li>Becuri/Faruri</li>
+                                        <li>Compresoare, Redresoare &#38; Aspiratoare auto</li>
+                                        <li>Sterilizatoare</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Pachete revizie auto-moto</p>
+                                </li>
+                                <li><p>Accesorii auto exterior-interior</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Bare transversale</li>
+                                        <li>Cutii portbagaj</li>
+                                        <li>Suport auto biciclete</li>
+                                        <li>Suport auto ski</li>
+                                        <li>Tuning și alte accesorii auto</li>
+                                        <li>Protecție portbagaj</li>
+                                        <li>Covorașe auto</li>
+                                        <li>Prelate și huse auto</li>
+                                        <li>Cotiere și organizatoare</li>
+                                        <li>Kit-uri siguranță auto</li>
+                                        <li>Sisteme tractare</li>
+                                    </ul>
+                                </li>
+                                <li><p>Consumabile și întreținere auto</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Ulei de motor</li>
+                                        <li>Lichide întreținere</li>
+                                        <li>Aditivi și soluții</li>
+                                        <li>Cosmetică și odorizante auto</li>
+                                        <li>Ștergătoare</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Piese auto</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Filtre autovehicul</li>
+                                        <li>Kit distribuție</li>
+                                        <li>Kit transmisie</li>
+                                        <li>Kit ambreiaj</li>
+                                        <li>Pompă apă</li>
+                                        <li>Discuri frână</li>
+                                        <li>Curea alternator/transmisie</li>
+                                        <li>Articulație și angrenare roată</li>
+                                        <li>Caroserie</li>
+                                        <li>Plăcuțe frână</li>
+                                        <li>Bujii</li>
+                                        <li>Piese de schimb</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="displaySubMenu1 autoBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/auto1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Pachete revizie auto-moto</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/auto2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Accesorii auto exterior-interior</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/auto3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Consumabile și întreținere auto</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/auto4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Playere</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/auto5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Boxe și Subwoofere</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/auto6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Camere video auto</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/auto7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Stații emisie recepție</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/auto8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Anvelope</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/auto9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Filtre autovehicul</p>
+                                    </div>
+                                </div>
+                            </div>   
+                      </div>        
+                    </li>
+                    <li class='item'>
+                        <div class="voiajButton">
+                            <a>Voiaj, Sport și Vacanță <div class="rightArrow arrow12"><i class="icon ion-md-arrow-dropright"></i></div></a>
+                        </div>
+                                <div class='menus menu12' >
+                                <ul class='subMenu1 voiajMenu' >
+                                <li><p>Vehicule electrice</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Biciclete electrice</li>
+                                        <li>Trotinete electrice</li>
+                                        <li>Triciclete electrice</li>
+                                        <li>Scootere electrice</li>
+                                        <li>Mopede electrice</li>
+                                    </ul>
+                                </li>
+                                <li><p>Trolere</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Troler Copii</li>
+                                        <li>Troler Cabină</li>
+                                        <li>Troler Mediu</li>
+                                        <li>Troler Mare</li>
+                                        <li>Troler Extra-Large</li>
+                                    </ul>
+                                </li>
+                                <li><p>Genți voiaj și sport</p>
+                                </li>
+                                <li><p>Rucsacuri</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Rucsac normal</li>
+                                        <li>Rucsac tip troler</li>
+                                    </ul>
+                                </li>
+                                <li><p>Genți Office și Serviete</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Genți bărbați</li>
+                                        <li>Serviete bărbați</li>
+                                        <li>Genți damă</li>
+                                        <li>Cutii bijuterii</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Portofele</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Portofele de damă</li>
+                                        <li>Portofele bărbați</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Borsete și accesorii</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Borsete femei</li>
+                                        <li>Borsete bărbați</li>
+                                    </ul>
+                                </li>
+                                <li><p>Accesorii articole voiaj</p>
+                                </li>
+                                <li><p>Biciclete</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Biciclete Mountain Bike</li>
+                                        <li>Biciclete copii</li>
+                                    </ul>
+                                </li>
+                                <li><p>Accesorii biciclete</p>
+                                </li>
+                            </ul>
+                            <div class="displaySubMenu1 voiajBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/voiaj1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Vehicule electrice</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/voiaj2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Trolere</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/voiaj3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Genți de voiaj și sport</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/voiaj4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Rucsacuri</p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/voiaj5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Genți office și Serviete</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/voiaj6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Portofele</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/voiaj7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Borsete și accesorii</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/voiaj8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Biciclete</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/voiaj9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Accesorii articole voiaj</p>
+                                    </div>
+                                </div>
+                            </div>   
+                      </div>  
+                        
+                    </li>
+                    <li class='item'>
+                        <div class="biroButton">
+                           <a>Birotică și Papetărie <div class="rightArrow arrow13" ><i class="icon ion-md-arrow-dropright"></i></div></a> 
+                        </div>
+                                 <div class='menus menu13' >
+                                <ul class='subMenu1 biroMenu' >
+                                <li><p>Articole școlare</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Ghiozdane, penare și genți copii</li>
+                                        <li>Caiete</li>
+                                        <li>Coperte caiete și cărți</li>
+                                        <li>Creioane colorate și cariorci</li>
+                                        <li>Acuarele, pensule și blocuri desen</li>
+                                        <li>Rigle și instrumente geometrie</li>
+                                        <li>Hărți și globuri pământești</li>
+                                        <li>Plastilină</li>
+                                        <li>Numărători, alfabetare și alte accesorii</li>
+                                    </ul>
+                                </li>
+                                <li><p>Instrumente de scris</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Stilouri</li>
+                                        <li>Pixuri</li>
+                                        <li>Creioane</li>
+                                        <li>Markere</li>
+                                        <li>Corectoare, radiere și ascuțitori</li>
+                                    </ul>
+                                </li>             
+                                <li><p>Hârtie și produse din hârtie</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Hârtie copiator</li>
+                                        <li>Agende</li>
+                                        <li>Plicuri</li>
+                                        <li>Formulare tipizate nepersonalizate</li>
+                                        <li>Etichete autoadezive</li>
+                                        <li>Notițe autoadezive și cuburi hțrtie</li>
+                                        <li>Pungi și ambalaje cadouri</li>
+                                        
+                                    </ul>
+                                </li>
+                                <li><p>Organizare și arhivare</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Bibliorafturi și etichete</li>
+                                        <li>Caiete mecanice</li>
+                                        <li>Dosare, mape și clipboarduri</li>
+                                        <li>File din plastic</li>
+                                        <li>Cutii arhivare</li>
+                                        <li>Accesorii arhivare</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Articole și accesorii birou</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Calculatoare de birou</li>
+                                        <li>Capsatoare și capse</li>
+                                        <li>Perforatoare</li>
+                                        <li>Foarfece și cuttere</li>
+                                        <li>Agrafe, ace, clipsuri, pioneze și umezitoare</li>
+                                        <li>Suporturi articole birou</li>
+                                        <li>Tăvițe și suporturi documente</li>
+                                        <li>Tușuri, tușiere, ștampile</li>
+                                        <li>Lipici și benzi adezive</li>
+                                        <li>CD/DVD/BD blank</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Tehnică de birou</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Laminatoare</li>
+                                        <li>Distrugătoare de documente</li>
+                                        <li>Aparate de îndosariat</li>
+                                        <li>Ghilotine și trimmere</li>
+                                        <li>Mașini de numărat banii</li>
+                                        <li>Accesorii tehnică birou</li>
+                                        <li>Produse ergonomice</li>
+                                    </ul>
+                                </li>
+                                <li><p>Sisteme de prezentare</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Table de conferință</li>
+                                        <li>Sisteme de afișare și prezentare</li>
+                                        <li>Flipcharturi și accesorii</li>
+                                        <li>Ecusoare și accesorii</li>
+                                        <li>Accesorii pentru table</li>
+                                    </ul>
+                                </li>
+                                 <li><p>Mobilier pentru birou</p>
+                                    <ul class="smallSubMenu">
+                                        <li>Dulapuri pentru birou</li>
+                                        <li>Scaune birou</li>
+                                        <li>Birouri și mese conferință</li>
+                                        <li>Cuiere pentru birou</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="displaySubMenu1 biroBox">
+                                <div>
+                                    <h4>Cele mai accesate</h4> 
+                                </div>
+                                <div class="gridDisplayMenu">
+                                    <div class="subMenuImage1 no-left-border">
+                                        <img class="size-photo" src='images/biro1.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Articole școlare</p>
+                                    </div>
+                                    <div class="subMenuImage2">
+                                        <img class="size-photo" src='images/biro2.jpg' alt='Phone'>
+                                        <p><span>&#187;</span> Instrumente de scris</p>
+                                    </div>
+                                    <div class="subMenuImage3">
+                                        <img class="size-photo" src='images/biro3.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Hârtie și produse din hârtie</p>
+                                    </div>
+                                    <div class="subMenuImage4 no-left-border">
+                                        <img class="size-photo" src='images/biro4.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Organizare și arhivare </p>
+                                    </div>
+                                    <div class="subMenuImage5">
+                                        <img class="size-photo" src='images/biro5.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Articole și accesorii birou</p>
+                                    </div>
+                                    <div class="subMenuImage6">
+                                        <img class="size-photo" src='images/biro6.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Tehnică de birou</p>
+                                    </div>
+                                    <div class="subMenuImage7 no-left-border">
+                                        <img class="size-photo" src='images/biro7.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Sisteme de prezentare</p>
+                                    </div>
+                                    <div class="subMenuImage8">
+                                        <img class="size-photo" src='images/biro8.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Mobilier pentru birou</p>
+                                    </div>
+                                    <div class="subMenuImage9">
+                                        <img class="size-photo" src='images/biro9.jpg' alt='Phone'>
+                                        <p><span>&#187;</span>Ghiozdane, penare și genți copii</p>
+                                    </div>
+                                </div>
+                            </div>   
+                      </div>     
+                    </li>  
+                </ul>
+            </div>  
+            <div class='serviceBox notActive boxDropDown'>
+                <ul>
+                    <li><a>Suport clienți</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div>
+                    </li>
+                    <li><a>Extragaranție</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div>
+                    </li>
+                    <li><a>Mobile protect</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div>
+                    </li>
+                    <li><a>Data Protect</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div>
+                    </li>
+                    <li><a>Servicii de instalare</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div>
+                    </li>
+                    <li><a>Retur produse</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div>
+                    </li>
+                    <li><a>Formular retur</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div>
+                    </li>
+                    <li><a>Rezervă în magazin</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div>
+                    </li>
+                    <li><a>Reclamații/Sesizări</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div>
+                    </li>   
+                </ul>
+           </div>
+            <div class='financeBox notActive boxDropDown'>
+                <ul>
+                    <li><a>Rate online Credex</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div></li>
+                    <li><a>Credit în magazin</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div></li>
+                    <li><a>Credit de nevoi personale</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div></li>
+                    <li><a>Carduri de credit</a><div class="rightArrow arrow0 "><i class="icon ion-md-arrow-dropright"></i>  </div></li>  
+                </ul>
+           </div>   
+    </section>
+    
+    <section class="main-menu row">
+           <div class="navigation-small-links">
+              <ul>
+                    <li><a href="#">Acasă</a>/</li>
+                    <li><a href="#">Voiaj, Sport și Vacanță</a>/</li>
+                    <li><a href="#">Vehicule electrice</a>/</li>
+                    <li><a href="#" id="trotinete-elec">Trotinete electrice</a></li>  
+              </ul>
+               
+        </div>
+    </section> 
+     <!-- Side menu-->  
+     <div id="grid-container" class="row">
+        <aside>
+            <div class="check-boxes">
+                <h3>General</h3>
+                <ul>
+                    <li><a href=#>Resigilate (9)</a></li>
+                    <li><a href=#>În stoc (12)</a></li>
+                    <li><a href=#>Noutăți (1)</a></li>
+                </ul>
+            </div>
+             <div class="check-boxes">
+                <h3>Preț</h3>
+                <ul>
+                    <li><a href=#>Sub 1000 (5)</a></li>
+                    <li><a href=#>1000-1500 (1)</a></li>
+                    <li><a href=#>1500-2000 (5)</a></li>
+                    <li><a href=#>2000-3000 (4)</a></li>
+                    <li><a href=#>3000-4000 (1)</a></li>
+                    <li><a href=#>Peste 1500 (1)</a></li>
+                </ul>
+            </div>
+             <div class="check-boxes">
+                <h3>Brand</h3>
+                <ul>
+                    <li><a href=#>MYRIA (7)</a></li>
+                    <li><a href=#>XIAOMI (3)</a></li>
+                    <li><a href=#>FREEWHEEL (3)</a></li>
+                    <li><a href=#>NINEBOT (3)</a></li>
+                    <li><a href=#>ONEMILE (1)</a></li>
+                </ul>
+            </div>
+             <div class="check-boxes">
+                <h3>Tip produs</h3>
+                <ul>
+                    <li><a href=#>Scooter (1)</a></li>
+                    <li><a href=#>Trotinetă electrică (11)</a></li>
+                </ul>
+            </div>
+             <div class="check-boxes">
+                <h3>Viteză maximă (km/h)</h3>
+                <ul>
+                     <li><a href=#>20- 25 (15)</a></li>
+                     <li><a href=#>Peste 26 (2)</a></li>
+                </ul>
+            </div>
+             <div class="check-boxes">
+                <h3>Dimensiune roți (inch)</h3>
+                <ul>
+                    <li><a href=#>6-7 (3)</a></li>
+                    <li><a href=#>8-9 (11)</a></li>
+                    <li><a href=#>10-11 (2)</a></li>
+                </ul>
+            </div>
+             <div class="check-boxes">
+                <h3>Autonomie maximă (km)</h3>
+                <ul>
+                    <li><a href=#>Sub 15 (5)</a></li>
+                    <li><a href=#>16-20 (2)</a></li>
+                    <li><a href=#>21-37 (7)</a></li>
+                    <li><a href=#>Peste 36 (3)</a></li>
+                </ul>
+            </div>
+             <div class="check-boxes">
+                <h3>Aplicație Smart</h3>
+                <ul>
+                     <li><a href=#>Da (10)</a></li>
+                     <li><a href=#>Nu (7)</a></li>
+                </ul>
+            </div>
+             <div class="check-boxes">
+                <h3>Greutate maximă suportată (kg)</h3>
+                <ul>
+                     <li><a href=#>Sub 100 (11)</a></li>
+                     <li><a href=#>110-120 (6)</a></li>
+                </ul>
+            </div>
+             <div class="check-boxes">
+                <h3>Culoare</h3>
+                <ul>
+                     <li><a href=#>Alb (2)</a></li>
+                     <li><a href=#>Gri închis (1)</a></li>
+                     <li><a href=#>Negru (14)</a></li>
+                </ul>
+            </div> 
+        </aside>
+        <div class="price-list">
+            <div class="banner-sign">
+                    <div class="next-buttons change-color" id="previous-button">&lt;</div>
+                    <div class="next-buttons change-color" id="next-button">&gt;</div>  
+                    <h2>Trotinete electrice</h2>
+            </div>
+            <!-- Filter menu of the products-->
+            <div class="container-price">
+                    <div class="figures-filter">
+                        <div class="first-option">
+                                <label>Sortează după:
+                                    <select class="sort-filter">
+                                        <option value="Nume">Nume</option>
+                                        <option value="Nume">Preț crescător</option>
+                                        <option value="Nume">Preț descrescător</option>
+                                        <option value="Nume" selected="selected">Cele mai vândute</option>
+                                        <option value="Nume">Cel mai mare discount</option>  
+                                    </select>
+                               </label>
+                        </div>
+                        <div class="second-option">
+                                <label>Vezi:
+                                    <select class="sort-filter">
+                                        <option value="Tabel" selected="selected">Tabel</option>
+                                        <option value="Listă">Listă</option>
+                                    </select>
+                                </label> 
+                        </div>
+
+                        <div class="third-option">
+                                <label>Arată:
+                                    <select class="sort-filter">
+                                        <option value="48">48</option>
+                                        <option value="36">36</option>
+                                        <option value="24">24</option>
+                                    </select>
+                                </label> 
+                        </div>
+                        <div class="forth-option">
+                                <label>Pagina:
+                                    <select class="sort-filter">
+                                        <option value="1/1">1/1</option>
+                                    </select>
+                                </label> 
+                        </div>     
+                    </div>             
+            </div>
+    <!-- The presentation list of the products-->
+            <div class="each-product">
+                <div class="product1 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">300 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span class='starPrice' id="star">&#10022;</span><span class='itemPrice'>1.599</span> <sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1.899,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică XIAOMI Mijia M365, 8.5inch, pliabilă,negru</a>
+                    </div>
+                    <div class="cart-button">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>  
+                </div>
+                    <div class="product2 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-2.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">450 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 1.299</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1.749,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle" >Trotinetă electrică pliabilă MYRIA MY7022BK City</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>  
+                </div>
+                <div class="product3 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-3.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">350 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'>949</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1.299,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică XIAOMI Mijia M365, 8.5inch, pliabilă,negru</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>  
+                </div>
+                <div class="product4 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-4.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">300 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 1.599</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1.899,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică FREEWHEEL Rider T1, 8 inch</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>  
+                </div>
+                  <div class="product5 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-5.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">150 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 999</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1149,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică pliabilă MYRIA MY7022BK Junior Plus</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>       
+                </div>
+                <div class="product6 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-6.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">1940 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 5.059</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">6.999,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Scooter electric ONEMILE HALO CITY, 25km/h, alb</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>       
+                </div>
+                <div class="product7 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-7.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag ">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">300 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 1.599</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price ">1.899,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică XIAOMI Mijia M365, 8.5inch, pliabilă,negru</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>       
+                </div>
+                <div class="product8 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-8.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">300 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 1.599</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1.899,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică XIAOMI Mijia M365, 8.5inch, pliabilă,negru</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>       
+                </div>
+                <div class="product9 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-9.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">300 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 2.299</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1.899,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică FREEWHEEL Rider T1, 8 inch</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>  
+                </div>
+                  <div class="product10 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-10.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">150 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 1.999</span><sup class='smallSup'>,99</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1149,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică pliabilă MYRIA MY7022BK Junior Plus</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>       
+                </div>
+                <div class="product11 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-11.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">150 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 949</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1.099,99 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Scooter electric ONEMILE HALO CITY, 25km/h, alb</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>       
+                </div>
+                <div class="product12 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-12.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag ">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">180 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 1.719</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price ">1.899,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică XIAOMI Mijia M365, 8.5inch, pliabilă,negru</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>       
+                </div>
+                <div class="product13 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-13.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">800 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 2.149</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1.899,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică XIAOMI M1 PRO, 8.5 inch, pliabilă, negru</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>  
+                </div>
+                  <div class="product14 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-14.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">1120 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 1.679</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">2.799,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică pliabilă MYRIA MY7022BK 8 inch, negru</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>       
+                </div>
+                <div class="product15 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-15.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">640 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'>959</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1.599,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică pliabilă MYRIA MY7009BK 8 inch, negru</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>       
+                </div>
+                <div class="product16 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-16.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag ">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">250 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 949</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price ">1.199,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică pliabilă MYRIA MY7019 8 inch, negru</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>       
+                </div>
+                <div class="product17 grid">
+                    <div class="image-product">
+                          <img src="images/trotineta-17.jpg" alt="trotineta" class= 'eachImageProduct' >
+                    </div>  
+                    <div class="discount-tag">
+                            <p class="discount">Reducere</p>
+                            <p class="price-discount">300 lei</p> 
+                    </div>
+                    <div class="price">
+                            <p class="star"></p>
+                            <p class="big-price"> <span id="star">&#10022;</span><span class='itemPrice'> 3.849</span><sup class='smallSup'>,90</sup><span class="lei">lei</span></p>
+                            <p class="small-price">1.899,90 </p>
+                    </div>
+                    <div class="available">
+                            <p><span>&#10003;</span>În stoc</p>
+                    </div>
+                    <div class="description-item">
+                            <a href="#" class="hover-effect itemTitle">Trotinetă electrică NINEBOT KickScooter MAX G30, 10 inch, pliabilă, dark grey</a>
+                    </div>
+                    <div class="cart-button ">
+                            <div class="cart button-style">
+                               <p>Adaugă în coș</p>
+                            </div>
+                            <div class="icon-cart icon-style">
+                               <i class="icon ion-ios-cart"></i> 
+                            </div>  
+                    </div>
+                     <div class="reserve-button">
+                            <div class="reserve button-style">
+                               <p>Rezervă în magazin</p>
+                            </div>
+                            <div class="reserve-style icon-style">
+                               <i class="icon ion-ios-home"></i> 
+                            </div>  
+                    </div>
+                    <div class="compare">
+                            <div class="compare-button">
+                               <div>&#x22A1; Compară</div>
+                            </div>  
+                    </div>    
+                </div>            
+        </div>
+            <div class="container-price bottom-container">
+                    <div class="figures-filter">
+                        <div class="first-option">
+                                <label>Sortează după:
+                                    <select class="sort-filter">
+                                        <option value="Nume">Nume</option>
+                                        <option value="Nume">Preț crescător</option>
+                                        <option value="Nume">Preț descrescător</option>
+                                        <option value="Nume" selected="selected">Cele mai vândute</option>
+                                        <option value="Nume">Cel mai mare discount</option>  
+                                    </select>
+                               </label>
+                        </div>
+                        <div class="second-option">
+                                <label>Vezi:
+                                    <select class="sort-filter">
+                                        <option value="Tabel" selected="selected">Tabel</option>
+                                        <option value="Listă">Listă</option>
+                                    </select>
+                                </label> 
+                        </div>
+
+                        <div class="third-option">
+                                <label>Arată:
+                                    <select class="sort-filter">
+                                        <option value="48">48</option>
+                                        <option value="36">36</option>
+                                        <option value="24">24</option>
+                                    </select>
+                                </label> 
+                        </div>
+                        <div class="forth-option">
+                                <label>Pagina:
+                                    <select class="sort-filter">
+                                        <option value="1/1">1/1</option>
+                                    </select>
+                                </label> 
+                        </div>     
+                    </div>             
+            </div>     
+        </div>
+         
+   </div>  
+       <footer>   
+           <div class="footer-container">
+              <div class='certificate-container'>
+                    <div class="certificate row">
+                        <p>Conform sondajului Best Buy Award 2019/2020 efectuat de organizația iCertias.</p>
+                        <img src="images/bestbuy.png" alt="best buy certificate">
+                        <img src="images/bestbuy.png" alt="best buy certificate">
+                    </div>
+              </div> 
+              <div class="footer-grid row">
+                    <div class="footer-1 footer-list-style">
+                        <h4>Despre Altex</h4>
+                        <div class='borderUnder'></div>
+                        <ul>
+                            <li><a href="#">Despre noi</a></li>
+                            <li><a href="#">Cariere</a></li>
+                            <li><a href="#">Altex recomandă</a></li>
+                            <li><a href="#">Hartă magazine</a></li>
+                            <li><a href="#">Categorii produse</a></li>
+                            <li><a href="#">Afiliere Altex</a></li>
+                            <li><a href="#">Protecția mediului</a></li>
+                            <li><a href="#">Vânzări corporate</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-2 footer-list-style">
+                        <h4>Servicii</h4>
+                        <div class='borderUnder'></div>
+                        <ul>
+                            <li><a href="#">Finațare</a></li>
+                            <li><a href="#">Instalare</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">De 2 ori diferența</a></li>
+                            <li><a href="#">Rezervă în magazin</a></li>
+                            <li><a href="#">Tax free</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-3 footer-list-style">
+                        <h4>Suport clienți</h4>
+                        <div class='borderUnder'></div>
+                        <ul>
+                            <li><a href="#">Ajutor</a></li>
+                            <li><a href="#">Formular retur</a></li>
+                            <li><a href="#">Garanție</a></li>
+                            <li><a href="#">Relații clienți</a></li>
+                            <li><a href="#">Reclamații</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-4 footer-list-style">
+                        <h4>Informații</h4>
+                        <div class='borderUnder'></div>
+                        <ul>
+                            <li><a href="#">Termeni și condiții</a></li>
+                            <li><a href="#">Politica cookie-uri</a></li>
+                            <li><a href="#">Informații privind DEEE</a></li>
+                            <li><a href="#">A.N.P.C.</a></li>
+                            <li><a href="#">Protecția datelor cu caracter personal</a></li>
+                        </ul>
+                    </div> 
+                    <div class="footer-5 footer-list-style">
+                        <h4>Contact</h4>
+                        <div class='borderUnder'></div>
+                        <a href='#'>Abonare newsletter</a>
+                        <ul class='socialMediaIcons'>
+                            <li><a href="#"><i class="icon ion-logo-facebook mediaIcons facebookIcon"></i></a></li>
+                            <li><a href="#"><i class="icon ion-logo-twitter mediaIcons twitterIcon"></i></a></li>
+                            <li><a href="#"><i class="icon ion-logo-linkedin mediaIcons linkinIcon"></i></a></li>
+                            <li><a href="#"><i class="icon ion-logo-youtube mediaIcons youtubeIcon"></i></a></li>
+                        </ul>
+                    </div> 
+                     
+              </div> 
+              <div class="certificate row center-text bottom-text">
+                <p>S.C. ALTEX ROMANIA S.R.L. este înregistrată cu numarul 600 / 2006 în registrul de evidență a prelucrarilor de date cu caracter personal</p>
+                  <p>Acesta este o pagină fictivă, care sub nicio formă, nu reflectă politica sau prețurile Altex.</p>
+              </div>
+           </div>  
+        </footer> 
+       <script src="script.js"></script>
+   </body>  
+   
+   
+</html>
